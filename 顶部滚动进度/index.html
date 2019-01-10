@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="email=no">
+  <!-- 指定国产浏览器的渲染模式 -->
+  <meta name="renderer" content="webkit">
+  <!-- 通知IE使用其支持的最新模式渲染 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>顶部滚动进度</title>
+  <style>
+    body {
+      padding: 25px 0;
+    }
+
+    .top-progress {
+      position: relative;
+      width: 300px;
+      height: 250px;
+      margin: 0 auto;
+      overflow: auto;
+    }
+
+    .top-progress-content {
+      padding: 0 1em;
+      overflow: hidden;
+      background: linear-gradient(to right top, #ffcc00 50%, #eee 50%) no-repeat;
+    }
+
+    .top-progress-mask {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: #fff;
+      z-index: 1;
+    }
+
+    .top-progress-mask::after {
+
+      position: fixed;
+      top: 5px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: #fff;
+      z-index: -1;
+    }
+
+    .top-progress h4 {
+      padding-top: 15px;
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .top-progress p {
+      text-indent: 2em;
+    }
+
+    body {
+      position: relative;
+      padding: 50px;
+      font-size: 24px;
+      line-height: 30px;
+      background-image: linear-gradient(to right top, #ffcc00 50%, #eee 50%);
+      background-size: 100% calc(100% - 100vh + 5px);
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: 5px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: #fff;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+<h4>顶部滚动进度</h4>
+<p>给滚动的元素添加一个从左下到到右上角的线性渐变</p>
+<p>然后使用一个伪元素做遮罩，把多出来的部分遮住，仅保留顶部显示</p>
+<p>这样就利用css做好了一个顶部滚动进度</p>
+<br/>
+<p>给滚动的元素添加一个从左下到到右上角的线性渐变</p>
+<p>然后使用一个伪元素做遮罩，把多出来的部分遮住，仅保留顶部显示</p>
+<p>这样就利用css做好了一个顶部滚动进度</p>
+<br/>
+<p>给滚动的元素添加一个从左下到到右上角的线性渐变</p>
+<p>然后使用一个伪元素做遮罩，把多出来的部分遮住，仅保留顶部显示</p>
+<p>这样就利用css做好了一个顶部滚动进度</p>
+<br/>
+<p>给滚动的元素添加一个从左下到到右上角的线性渐变</p>
+<p>然后使用一个伪元素做遮罩，把多出来的部分遮住，仅保留顶部显示</p>
+<p>这样就利用css做好了一个顶部滚动进度</p>
+<br/>
+<p>给滚动的元素添加一个从左下到到右上角的线性渐变</p>
+<p>然后使用一个伪元素做遮罩，把多出来的部分遮住，仅保留顶部显示</p>
+<p>这样就利用css做好了一个顶部滚动进度</p>
+<br/>
+<p>给滚动的元素添加一个从左下到到右上角的线性渐变</p>
+<p>然后使用一个伪元素做遮罩，把多出来的部分遮住，仅保留顶部显示</p>
+<p>这样就利用css做好了一个顶部滚动进度</p>
+</body>
+</html>
