@@ -1,19 +1,23 @@
-import home from './../page/home'
+import Home from './../page/home'
+import Css from './../page/css'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: home
+    component: Home
   },
   {
     path: '/css',
-    name: 'css',
-    redirect: '/css/test',
+    name: 'CSS',
+    redirect: '/css/waterfallFlow',
+    component: Css,
     children: [
       {
-        path: '/css/test',
-        name: 'test'
+        path: '/css/waterfallFlow',
+        name: 'waterfallFlow',
+        text: '瀑布流布局(flex)',
+        component: () => import('./../page/css/waterfallFlow')
       }
     ]
   }
