@@ -1,7 +1,8 @@
 <template>
+  <!-- 瀑布流 -->
   <div class="g-container">
-    <div class="g-queue" v-for="i in 4">
-      <div class="g-item" v-for="j in 8"></div>
+    <div class="g-queue" v-for="i in 4" :key="i">
+      <div class="g-item" v-for="j in 8" :key="j"></div>
     </div>
   </div>
 </template>

@@ -18,6 +18,12 @@ const routes = [
         name: 'waterfallFlow',
         text: '瀑布流布局(flex)',
         component: () => import('./../page/css/waterfallFlow')
+      },
+      {
+        path: '/css/waveLine',
+        name: 'waveLine',
+        text: '下划线波浪动画',
+        component: () => import('./../page/css/waveLine')
       }
     ]
   }

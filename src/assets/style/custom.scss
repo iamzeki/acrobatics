@@ -1,3 +1,25 @@
+/**
+ * 边距、填充 5px - 20px
+ * mt5 - 20, mr5 - 20, mb5 - 20, ml5 - 20
+ * pt5 - 20, pr5 - 20, pb5 - 20, pl5 - 20
+ */
+$baseNum: 5;
+$styleList: (m margin) (p padding); // (类名缩写 样式属性)
+$directionList: (t top) (r right) (b bottom) (l left); // (方向缩写 样式方向)
+@each $styleType in $styleList {
+  $styleClass: nth($styleType, 1);
+  $styleAttr: nth($styleType, 2);
+  @each $directionType in $directionList {
+    $directionClass: nth($directionType, 1);
+    $directionAttr: nth($directionType, 2);
+    @for $i from 1 through 4 {
+      .#{$styleClass}#{$directionClass}#{$i*5} {
+        #{$styleAttr}-#{$directionAttr}: $i * $baseNum * 1px;
+      }
+    }
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,4 +38,9 @@ ul, ol {
   list-style: none;
 }
 
-//
+// main layout
+.layout-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

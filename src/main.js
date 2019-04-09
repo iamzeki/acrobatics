@@ -6,7 +6,8 @@ import router from './router'
 import ElementUI from 'element-ui'
 import 'normalize.css'
 import 'element-ui/lib/theme-chalk/index.css'
-import './assets/style/custom.scss'
+import '@/assets/style/custom.scss'
+
 
 Vue.config.productionTip = false;
 
@@ -18,4 +19,4 @@ new Vue({
   router,
   components: {App},
   template: '<App/>'
-})
+});
